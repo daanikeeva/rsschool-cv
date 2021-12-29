@@ -8,7 +8,7 @@
 =====
 
 ## About me
-
+A beginner specialist with a thirst for knowledge, I learn quickly and can independently look for answers to assigned tasks. I plan to develop professionally and personally and become an experienced front-end developer.
 ====
 
 ## Skills
