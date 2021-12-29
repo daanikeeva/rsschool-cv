@@ -34,9 +34,9 @@ function multiply(a, b){
 1. [Free course on layout (YouTube)](https://www.youtube.com/watch?v=yJcCKuxfb2o&list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr)
 2. Additional professional advanced training program "Graphic design and layout of web pages" (taking into account the Worldskills standard for the "Web technologies (Worldskills)" 
 3. JavaScript: https://learn.javascript.ru/ (in progress)
-4. RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+4. RS Schools «JavaScript/Front-end. Stage 0» RS Schools (in progress)
 
-=====
+
 ## Languages
 *Russian* - native
 
