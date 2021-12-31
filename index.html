@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аникеева Дарья - резюме</title>
+    <title>Anikeeva Darya CV </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
 </head>
 <body>
     <div class="wrapper">
@@ -12,32 +14,40 @@
             <nav class="header__menu menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            About me
-                        </a>
-                        <a href="#" class="menu__link">
+                        <a href="#contacts" class="menu__link">
                             Contacts
                         </a>
-                        <a href="#" class="menu__link">
+                    </li>
+                    <li class="menu__item">
+                        <a href="#about-me" class="menu__link">
+                            About me
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#skills" class="menu__link">
                             Skills
                         </a>
-                        <a href="#" class="menu__link">
-                            Courses
-                        </a>
-                        <a href="#" class="menu__link">
+                    </li>
+                    <li class="menu__item">
+                        <a href="#projects" class="menu__link">
                             Projects
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#courses" class="menu__link">
+                            Courses
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="cv">
+        <main class="cv container">
             <section class="cv__main main">
                 <div class="main__photo">
-
+                    <img src="./assets/img/photo.jpg" alt="">
                 </div>
-                <div class="main__info">
-                    <span>I'm</span><h1 class="main__name">Darya Anikeeva</h1>
+                <div class="main__info" id="contacts">
+                    <h1 class="main__name"><span>I'm </span>Darya Anikeeva</h1>
                     <h2 class="main__speciality">Junior Frontend Developer</h2>
                 </div>
                 <hr>
@@ -68,7 +78,7 @@
                     </div>
                 </div>
             </section>
-            <section class="cv__about about-me">
+            <section class="cv__about about-me" id="about-me">
                 <h2 class="title">About me</h2>
                 <p>
                     A beginner specialist with a thirst for knowledge, I learn quickly and can independently look for answers to assigned tasks. I plan to develop professionally and personally and become an experienced front-end developer.
@@ -76,7 +86,7 @@
                     (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое
                 </p>
             </section>
-            <section class="cv__skills skills">
+            <section class="cv__skills skills" id="skills">
                 <h2 class="title">Skills</h2>
                 <p>
                     HTML&CSS
@@ -87,13 +97,18 @@
                     Marcy
                 </p>
             </section>
-            <section class="cv__code-ex code-example">
-                <h2 class="title">Code example</h2>
-                <p>
-                    
-                </p>
+            <section class="cv__projects projects" id="projects">
+                <h2 class="title">Projects</h2>
+                <h3>Code example</h3>
+                <code>
+                    <pre>
+                        function capitalizeWord(word) {
+                            return (word[0].toUpperCase() + word.substring(1));
+                          }
+                    </pre>
+                </code>
             </section>
-            <section class="cv__courses courses">
+            <section class="cv__courses courses" id="courses">
                 <h2 class="title">Courses</h2>
                 <p>
                     Free course on layout (YouTube)
