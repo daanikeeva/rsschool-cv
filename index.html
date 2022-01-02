@@ -44,7 +44,7 @@
         <main class="cv">
             <section class="cv__main main container">
                 <div class="main__photo">
-                    <img src="./assets/img/photo.jpg" alt="">
+                    <img src="./assets/img/photo.jpg" alt="my photo">
                 </div>
                 <div class="main__info" id="contacts">
                     <span class="hello">Hello</span>
@@ -93,18 +93,60 @@
             </section>
             <section class="cv__skills skills container" id="skills">
                 <h2 class="title">Skills</h2>
-                <p>
-                    HTML&CSS
-                    BEM
-                    JS (in progress)
-                    Git, GitHub
-                    Figma
-                    Marcy
-                </p>
+                <div class="skills__info">
+                    <div class="skills__skill skill">
+                        <div class="skill__title">HTML</div>
+                        <progress class="skill__progress" value="70" max="100"></progress>
+                    </div>
+                    <div class="skills__skill skill">
+                        <div class="skill__title">CSS</div>
+                        <progress class="skill__progress" value="50" max="100"></progress>
+                    </div>    
+                    <div class="skills__skill skill">
+                        <div class="skill__title">BEM</div>
+                        <progress class="skill__progress" value="75" max="100"></progress>
+                    </div>  <div class="skills__skill skill">
+                        <div class="skill__title">JS (in progress)</div>
+                        <progress class="skill__progress" value="20" max="100"></progress>
+                    </div>  <div class="skills__skill skill">
+                        <div class="skill__title">Git, GitHub</div>
+                        <progress class="skill__progress" value="55" max="100"></progress>
+                    </div>  <div class="skills__skill skill">
+                        <div class="skill__title">Figma</div>
+                        <progress class="skill__progress" value="80" max="100"></progress>
+                    </div>      
+                </div>
             </section>
             <section class="cv__projects projects container" id="projects">
                 <h2 class="title">Projects</h2>
-                <h3>Code example</h3>
+                <div class="projects__row">
+                    <div class="projects__item">
+                        <div class="projects__img"><img src="./assets/img/leto-center.png" alt="screenshot site IT school"></div>
+                        <div class="projects__content">
+                            <div class="projects__info">
+                                Educational project: IT school website
+                            </div>
+                            <a class="projects__link" href="https://gendalf.tk/WSR2/AnikeevaD/leto-center/index.html">See project</a>
+                            
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <div class="projects__img"><img src="./assets/img/final.png" alt="screenshot site resume"></div>
+                        <div class="projects__content">
+                            <div class="projects__info">
+                                Educational project: IT school website
+                            </div>
+                            <a class="projects__link" href="https://gendalf.tk/WSR2/AnikeevaD/final/index.html">See project</a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+            </section>
+            <section class="cv__projects projects container" id="projects">
+                <h2 class="title">Code example</h2>
                 <code>
                     <pre>
                         function capitalizeWord(word) {
