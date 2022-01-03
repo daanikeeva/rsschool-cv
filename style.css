@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 
 /*Normalize*/
 *{
@@ -41,13 +42,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     --first-text-color: #3d4451;
     --second-text-color: #9da0a7;
 }
-.wrapper {
+
+/* .wrapper {
     background-image: url('./assets/img/backgroung.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: hsla(219, 14%, 28%, 0.315);
+    background-color: hsla(210, 2%, 47%, 0.226);
     background-blend-mode: overlay;
-}
+    
+} */
 .container {
     max-width: 930px;
     margin: 0 auto;
@@ -56,16 +59,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /* ------- header ----------- */
 .header {
     position: fixed;
+    z-index: 2;
     width: 100%;
     padding: 15px 120px;
-    background: rgba(255, 255, 255, 0.37);
+    background: rgba(255, 255, 255, 0.884);
 }
 .menu__list {
     display: flex;
     justify-content: center;
 }
 .menu__item {
-    margin-left: 40px;
+    margin: 0 20px;
     border-bottom: 3px solid transparent;
 }
 .menu__item:active, 
@@ -82,16 +86,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /* ------ main --------- */
 .cv {
     padding-top: 70px;
+    background-image: url('./assets/img/backgroung.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 80vh;
+    background-color: hsla(210, 2%, 47%, 0.226);
+    background-blend-mode: overlay;
 }
-.cv__main {
-}
-.main {
+.main__row {
     display: flex;
     justify-content: space-between;
     padding: 55px 50px 40px;
-    margin: 75px auto 0;
+    margin: 85px auto 0;
     background: #fff;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
 }
 .main__photo {
     max-width: 300px;
@@ -193,9 +201,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .skills__info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 50px 40px;
+    margin: 0 -20px;
     background: #fff;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
@@ -203,7 +212,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .skills__skill {
 }
 .skill {
+    flex-basis: 50%;
     margin-bottom: 25px;
+    padding: 0 20px;
 }
 
 .skill__title {
@@ -213,44 +224,31 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .skill__progress {
     height: 7px;
-    width: 400px;
+    width: 100%;
     border: none;
     border-radius: 20px;
     color: var(--color-cheme);
-  }
-  .skill__progress::-webkit-progress-bar {
+}
+.skill__progress::-webkit-progress-bar {
     height: 7px;
-    width: 400px;
+    width: 100%;
     border: none;
     border-radius: 20px;
-    background: var(--second-text-color);
-  }
-  .skill__progress::-webkit-progress-value {
+    background: hsla(210, 2%, 47%, 0.226);
+}
+.skill__progress::-webkit-progress-value {
     background-color: var(--color-cheme);
     border-radius: 20px;
-  }
-
-.cv__projects {
-}
-.projects {
-}
-.container {
-}
-.title {
 }
 .projects__row {
     display: flex;
-    
     margin: 0 -20px;
 }
 .projects__item {
-    
     flex: 1 1 50%;
     margin: 20px;
     min-height: 200px;
-       
 }
-
 .projects__img {
     position: relative;
     padding-top: 50%;
@@ -262,15 +260,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: 100%;
     height: auto;
 }
-.projects__item:hover > .projects__content {
-    opacity: 1;
-    transition: all 0.5s;
-}
-
 .projects__content {
     text-align: center;
 }
-
 .projects__info {
     padding-top: 10px;
     margin-bottom: 15px;
@@ -290,9 +282,41 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .projects__link:hover {
     box-shadow: 0 5px 10px 2px rgba(85, 85, 85, 0.39);
 }
-
 pre {
-    padding: 20px;
+    padding: 40px 50px;
+    font-size: 20px;
     background: #fff;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
+.courses__list li, .lang__list li {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 25px;
+    list-style: square;
+}
+.lang {
+    padding-bottom: 30px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    background: #fff;
+}
+.footer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 930px;
+}
+.footer__github {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--first-text-color);
+}
+.footer__rsschool img {
+    height: 30px;
+}
+
